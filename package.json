@@ -1,0 +1,24 @@
+{
+  "name": "burger-for-you",
+  "version": "1.0.0",
+  "description": "Верстка с собственноручно сделанного статичного макета. Для создания дизайна использовался photoshop и gimp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontendAlexander/burger-for-you.git"
+  },
+  "keywords": [
+    "design",
+    "html",
+    "css"
+  ],
+  "author": "frontendAlexander",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frontendAlexander/burger-for-you/issues"
+  },
+  "homepage": "https://github.com/frontendAlexander/burger-for-you#readme"
+}
