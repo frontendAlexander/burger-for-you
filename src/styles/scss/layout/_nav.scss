@@ -1,0 +1,143 @@
+.top {
+	display: block;
+	position: relative;
+	color: pink;
+	background-image: url('../../../public/images/navigation-bg.jpg');
+	height: 13.2rem;
+	.top-box {
+		display: flex;
+		position: relative;
+		&__logo {
+			margin-top: 3.3rem;
+			margin-right: 13.8rem;
+			height: 7.4rem;
+			width: 7.4rem;
+			@media (max-width: 900px) {
+				margin-right: 3.5rem;
+			}
+		}
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			padding-top: 5rem;
+			margin-right: 10rem;
+			@media (max-width: 700px) {
+				display: none;
+			}
+			.nav {
+				display: grid;
+				grid-gap: 2.5rem;
+			    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			    justify-content: space-between;
+			    align-items: stretch;
+			    list-style: none;
+			    li {
+			    	width: 100%
+			    }
+			}
+		}
+		&__cart {
+			@media (max-width: 700px) {
+				margin-right: 0;
+			}
+			
+		}	
+	}
+	.commerc {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-top: 4rem;
+		@media (max-width: 700px){
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+		&__img {
+			height: 6.4rem;
+			width: 5.8rem;
+			background-image: url('../../../public/images/cart-burger-for-you.png');
+			background-repeat:no-repeat;
+			background-position: center center;
+			margin-right: 5.6rem;
+			.count-box{
+				position: relative;
+				height: 4.1rem;
+				width:4.1rem;
+				color: white;
+				background-color: blue;
+				border-radius: 50px;
+				text-align: center;
+				margin-top: -1.7rem;
+				margin-left: 4.3rem;
+				z-index:1;
+				&__counter{
+					position: absolute;
+				    top: 50%;
+				    left: 50%;
+				    transform: translate(-50%,-50%);
+					font-size: 1.6rem;
+					z-index:2;
+				}
+				/*
+				&:after {
+					content: '';
+					position:absolute;
+					top: -2rem;
+					left: 3.8rem;
+					height: 4.1rem;
+					width:4.1rem;
+					color: white;
+					background-color: blue;
+					border-radius: 50px;
+					text-align: center;
+					z-index:1;
+					}
+				*/
+				}
+				@media (max-width: 700px) {
+					margin-right: 3.3rem;
+				}
+			}
+		
+				
+		
+		&__counter {
+			font-size: $nav-font-size;
+			padding-top: 0.7rem;
+			margin-right: 2.1rem;
+			
+		}
+		&__button {
+			height: 5.7rem;
+			width: 17rem;
+			font-size: $nav-button-font-size;
+			margin-right: 3rem;
+			button {
+				height: 100%;
+				width: 100%;
+				color: pink;
+				background-color: blue;
+				border: none;
+				border-radius: 2px;
+
+			}
+			@media (max-width: 700px) {
+				margin-right: 1rem;
+				width: 10rem;
+				height: 3.8rem;
+			}
+			@media (max-width: 400px){
+				display: none;
+			}
+
+		}
+		&__burger {
+			display: none;
+			background-color: white;
+			height: 3.3rem;
+			width: 4rem;
+			@media (max-width: 700px) {
+				display: inline-block;
+			}
+		}
+	}
+
+}

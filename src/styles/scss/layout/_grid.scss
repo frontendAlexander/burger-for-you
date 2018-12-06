@@ -33,3 +33,32 @@
 		width: calc(3*((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
 	}
 }
+.Grid {
+	display: flex;
+	flex-wrap: wrap;
+
+	&-item {
+	width: 100%;
+	margin-top: 2%;
+
+	@media (min-width: 24rem) {
+	  width: 49%;
+	  &:nth-child(odd) {
+	    margin-right: 2%;
+	  }
+	}
+
+	@media (min-width: 31rem) {
+	  width: 23.5%;
+	  &:not(:nth-child(4n)) {
+	    margin-right: 2%;
+	  }
+	}
+
+	&:before {
+	  content: "";
+	  float: left;
+	  padding-top: 100%;
+	}
+	}
+}

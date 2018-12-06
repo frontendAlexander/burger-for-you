@@ -6,3 +6,55 @@ body {
 	padding: 3rem;
 	box-sizing: border-box;
 }
+.heading-primary {
+		color: white;
+		text-transform: uppercase;
+		backface-visibility: hidden;
+		
+		&--black {
+			color: black;
+		}
+}
+.heading-secondary{
+	display: inline-block;
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: black;
+	letter-spacing: 1px;
+	transition: all .2s;
+	&:hover {
+		transform: skewY(2deg) skewX(15deg) scale(1.1);
+		text-shadow: .5rem 1rem 2rem black;
+	}
+	&--white {
+		color: white;
+	}
+}
+.heading-primary--main{
+	
+		display: block;
+		font-size: 4rem;
+		font-weight: 400;
+		letter-spacing: 2.5rem;
+		animation-name: moveInRight;
+		animation-duration: 3s;
+		animation-timing-function: ease-out;
+		@media (max-width: 700px) {
+			font-size: 1.9rem;
+			letter-spacing: 1rem;
+			padding-bottom: 1.6rem;
+		}
+}
+.heading-primary--sub {
+
+		display: block;
+		font-size: 2rem;
+		font-weight: 700;
+		letter-spacing: 1.5rem;
+		animation: moveInRight 3s ease-out;
+		@media (max-width: 700px) {
+			font-size: 1rem;
+		}
+	
+}

@@ -1,0 +1,183 @@
+.header {
+	height:74.2rem;
+	position: relative;
+	background-image: url('../../../public/images/header-bg.jpg');
+	background-size: cover;
+	background-position: top;
+	
+	&:before {
+		content: "";
+		position:absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.9);
+	}
+	&__text {
+		position: absolute;
+		top: 16%;
+		left: 3rem;
+		@media (max-width: 800px) {
+			
+				text-align: center;
+				top: 4%;
+		}
+	}
+	&__button {
+		height: 6.8rem;
+		width: 28rem;
+		position: absolute;
+		left: 50%;
+		right: 50%;
+		transform: translate(-50%,-50%); 
+		bottom: 0.9rem;
+		text-align: center;
+	}
+	&__burgers {
+	    display: inline-block;
+	    min-width: 110rem;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%);
+
+	}
+}
+.burger-cards {
+	display: flex;
+	width: 100vh;
+	position: relative;
+	margin-left:7.2rem;
+	@media (max-width: 490px) {
+		display: none;
+	}
+	&__item1 {
+		position: relative;
+		background-color: white;
+		background-image: url('../../../public/images/picture-header-burger-cards1-burger-for-you.jpg');
+		background-size: cover;
+		background-position: center;
+		width: 16rem;
+		height: 16rem;
+		border-radius: 80px;
+		margin:0 0;
+		margin-right: 11rem;
+		text-align: center;
+		
+		&:before {
+		    content: '';
+		    position: absolute;
+		    width: 100%;
+		    height: 100%;
+		    border: 5px solid blue;
+		    border-radius: 100px;
+		    border-width: 7px;
+		    top: 0;
+		    left: 0rem;
+		    z-index: 1;
+		}
+		@media (max-width: 700px) {
+			bottom: 24rem;
+			left: 30rem;
+			background-size: 125%;
+			&:before {
+			    border: none;
+			}
+		}
+		&:after {
+			position: absolute;
+			bottom: -5.6rem;
+			left: 0;
+			right: 0;
+			content: 'Натуральные и свежие игридиентыв';
+			color: white;
+			font-size: $header-burgers-font-size;
+		}
+	}
+	&__item2 {
+		position: relative;
+		background-color: white;
+		background-image: url('../../../public/images/picture-header-burger-cards2-burger-for-you.jpg');
+		background-size: cover;
+		background-position: center;
+		width: 16rem;
+		height: 16rem;
+		border-radius: 100px;
+		margin:0 0;
+		margin-right: 11rem;
+		text-align: center;
+		@media (max-width: 700px) {
+			bottom: 24rem;
+			left: 27rem;
+			background-size: 125%;
+			&:before {
+			    border: none;
+			}
+		}
+		&:after {
+			position: absolute;
+			bottom: -5.6rem;
+			left: 0;
+			right: 0;
+			content: 'Классические рецепты от шефа';
+			color: white;
+			font-size: $header-burgers-font-size;
+		}
+	}
+	&__item3 {
+		position: relative;
+		background-color: white;
+		background-image: url('../../../public/images/picture-header-burger-cards3-burger-for-you.jpg');
+		background-size: cover;
+		background-position: center;
+		width: 16rem;
+		height: 16rem;
+		border-radius: 100px;
+		margin:0 0;
+		margin-right: 11rem;
+		padding-left: 10px;
+		text-align: center;
+		
+		&:after {
+			position: absolute;
+			bottom: -3.6rem;
+			left: 0;
+			right: 0;
+			content: 'Доставка на дом и в офис';
+			color: white;
+			font-size: $header-burgers-font-size;
+		}
+	}
+	&__item4 {
+		position: relative;
+		background-color: white;
+		background-image: url('../../../public/images/picture-header-burger-cards4-burger-for-you.jpg');
+		background-size: cover;
+		background-position: center;
+		width: 16rem;
+		height: 16rem;
+		border-radius: 80px;
+		margin:0 0;
+		margin-right: 11rem;
+		padding-left: 20px;
+		text-align: center;
+		@media (max-width: 700px) {
+			left: -52rem;
+			
+		}
+		&:after {
+			position: absolute;
+			bottom: -3.6rem;
+			left: 0;
+			right: 0;
+			content: 'Бесплатная доставка';
+			color: white;
+			font-size: $header-burgers-font-size;
+		}
+	}
+	&__text {
+		max-width: 19rem;
+		font-size: $header-burgers-font-size
+	}
+ 
+} 
+
