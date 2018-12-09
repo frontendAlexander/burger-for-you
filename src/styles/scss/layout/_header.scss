@@ -44,10 +44,9 @@
 }
 .burger-cards {
 	display: flex;
-	width: 100vh;
 	position: relative;
 	margin-left:7.2rem;
-	@media (max-width: 490px) {
+	@media (max-width: 480px) {
 		display: none;
 	}
 	&__item1 {
@@ -77,18 +76,21 @@
 		}
 		@media (max-width: 700px) {
 			bottom: 24rem;
-			left: 30rem;
+			left: 27rem;
 			background-size: 125%;
 			&:before {
 			    border: none;
 			}
+		}
+		@media (max-width: 500px) {
+			display: none;
 		}
 		&:after {
 			position: absolute;
 			bottom: -5.6rem;
 			left: 0;
 			right: 0;
-			content: 'Натуральные и свежие игридиентыв';
+			content: 'Натуральные и свежие игридиенты';
 			color: white;
 			font-size: $header-burgers-font-size;
 		}

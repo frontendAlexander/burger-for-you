@@ -11,11 +11,11 @@ window.load = function(){
     	}
     }
     
-    addEvent(window, "resize", switchClass);
+    //addEvent(window, "resize", switchClass);
     
 }();
 
-function switchClass(media_size) {
+function switchClass() {
 	console.log(media_size);
 	if(media_size2  < 700) {
     	console.log("<")
@@ -23,5 +23,5 @@ function switchClass(media_size) {
     else{
         console.log(">")
     }
-    */
+    
 }
