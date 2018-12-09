@@ -1,0 +1,88 @@
+.section-about {
+	display: flex;
+	position: relative;
+	background-color: #fff;
+	color: black;
+	margin-top: 7rem;
+	margin-bottom: 50rem;
+	@media (max-width: 550px) {
+		flex-direction: column;
+	}
+	&__text {
+		width: 49%;
+		font-size: 0.7rem;
+		padding-right: 4.5rem;
+		padding-bottom: 2.3rem;
+		@media (max-width: 550px) {
+			display: block;
+			width: 100%;
+			.heading-secondary {
+				font-size: 1.8rem;
+			}
+		}
+	}
+	.about-card {
+		display: block;
+		width: 49%;
+		perspective: 150rem;
+		-moz-perpective: 150rem;
+		position: relative;
+		height: 44rem;
+		@media (max-width: 550px) {
+			display: block;
+			width: 100%;
+		}
+		&__side {
+			height: 50rem;
+			transition: all .8s ease;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			backface-visibility: hidden;
+			&--front {
+				background-color: white;
+				background-image: url('../../../public/images/picture-about-burger-for-you.jpg');
+				background-repeat:no-repeat;
+				background-position: center center;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+			&--back {
+				position: relative;
+				transform: rotateY(180deg);
+				vertical-align: center;
+				text-align: center;
+				list-style: none;
+				overflow:  hidden;
+			}
+		}
+		&:hover .about-card__side--front {
+			transform: rotateY(180deg);
+			border: 1px solid black;
+
+		}
+		&:hover .about-card__side--back {
+			transform: rotateY(0);
+
+		}
+		
+	}
+	.about-card__side-back-side {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		font-size:1rem;
+		table {
+			padding-bottom: 2rem;
+		}
+		button {
+			height: 4rem;
+			background-color: blue;
+			color: pink;
+		}
+	}
+}
