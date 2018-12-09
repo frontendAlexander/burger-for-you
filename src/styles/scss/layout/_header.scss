@@ -31,6 +31,9 @@
 		transform: translate(-50%,-50%); 
 		bottom: 0.9rem;
 		text-align: center;
+		a {
+			text-decoration: none;
+		}
 	}
 	&__burgers {
 	    display: inline-block;

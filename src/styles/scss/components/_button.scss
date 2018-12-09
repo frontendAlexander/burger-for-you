@@ -47,6 +47,14 @@
 			opacity: 1;
 			}
 	}
+	&--red {
+		background-color: red;
+		color: white;
+		&::after {
+			background-color: blue;
+			opacity: 1;
+			}
+	}
 	&--animated {
 		animation: moveInButton .5s ease-out .75s;
 		animation-fill-mode: backwards;
