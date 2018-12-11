@@ -31,7 +31,7 @@
            </div>
            <div class="commerc__counter">Итого: 0,50$</div>
            <div class="commerc__button">
-             <button>Заказать</button> 
+             <button><a href="#popup">Заказать</a></button> 
            </div>
            <div class="commerc__burger"></div>
         </div>
@@ -66,7 +66,7 @@
     </div>
     <div class="header__button">
       <button class="btn btn--blue btn--animated">
-        <a href="#">
+        <a href="#menu">
           Перейти к меню
         </a>
       </button>
@@ -132,7 +132,7 @@
           </div>
         
     </section>
-    <section class="section-menu">
+    <section class="section-menu" id="menu">
       <h3 class="heading-secondary heading-secondary--white">Меню нашего ресторана</h3>
       <div class="section-menu__cards-row">
         <div class="Grid Grid--col-1-of-1">
@@ -249,18 +249,18 @@
       </div>
       <div class="section-delivery__button">
         
-          <button class="btn btn--red">
-            <a href="#">
-              Перейти к меню
+          <button>
+            <a href="#popup">
+              Заказать
             </a>
           </button>
         
       </div>
     </section>
-    <section class="contacts">
-      <div class="contacts__left">
+    <section>
+      <div class="contacts">
+        <div class="contacts__left">
         <div class="contacts-map">
-          <img src="public/images/picture-about-burger-for-you.jpg">
         </div>
       </div>
       <div class="contacts__right">
@@ -281,8 +281,41 @@
             
           </form>
         </div>
+      </div>    
       </div>
     </section>
   </main>
+  <div class="popup" id="popup">
+    <div class="popup-container">
+      <div class="popup-container__left">
+        <div class="popup-form">
+          <form action="#">
+            <div class="popup-form__group">
+              <h5 class="popup-form__title">Остались вопросы? <br> Мы вам перезвоним!</h5>
+              <div class="popup-form__field">
+                <input type="text" class="popup-form__input" placeholder="Имя" id="name" required>
+                <label for="name" class="popup-form__label"></label>
+              </div>
+              <div class="popup-form__field">
+                <input type="text" class="popup-form__input" placeholder="Телефон" id="telephone" required>
+                <label for="telephone" class="popup-form__label"></label>
+              </div>
+              <div class="popup-form__field">
+                <input type="text" class="popup-form__input" placeholder="Адрес доставки" id="adress" required>
+                <label for="adress" class="popup-form__label"></label>
+              </div>
+              <button class="popup-form__button"><a href="#popup-container">Заказать!</a></button>  
+            </div>
+            
+          </form>
+        </div>
+      </div>
+      <div class="popup-container__right">
+        <div class="popup__info">
+          <span class="block">Спасибо!</span> Ваш заказ принят в обработку. Мы свяжемся с Вами в течении 15 минут. 
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

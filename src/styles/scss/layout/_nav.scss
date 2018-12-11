@@ -75,35 +75,16 @@
 				    transform: translate(-50%,-50%);
 					font-size: 1.6rem;
 					z-index:2;
-				}
-				/*
-				&:after {
-					content: '';
-					position:absolute;
-					top: -2rem;
-					left: 3.8rem;
-					height: 4.1rem;
-					width:4.1rem;
-					color: white;
-					background-color: blue;
-					border-radius: 50px;
-					text-align: center;
-					z-index:1;
 					}
-				*/
 				}
 				@media (max-width: 700px) {
 					margin-right: 3.3rem;
 				}
 			}
-		
-				
-		
 		&__counter {
 			font-size: $nav-font-size;
 			padding-top: 0.7rem;
 			margin-right: 2.1rem;
-			
 		}
 		&__button {
 			height: 5.7rem;
@@ -113,11 +94,12 @@
 			button {
 				height: 100%;
 				width: 100%;
-				color: pink;
 				background-color: blue;
 				border: none;
 				border-radius: 2px;
-
+			}
+			a {
+				color: pink;
 			}
 			@media (max-width: 700px) {
 				margin-right: 1rem;

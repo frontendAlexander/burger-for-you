@@ -159,18 +159,25 @@
 	&__button {
 		display: block;
 		position: relative;
+		height: 8.5rem;
+		max-width: 36rem;
 		button {
-			height: 8.5rem;
-			max-width: 36rem;
+			height: 100%;
+			width: 100%;
 			font-size: 1.8rem;
 			text-transform: uppercase;
 			position: absolute;
 			bottom: 0.9rem;
 			text-align: center;
+			border: none;
+			background-color: blue;
 		}
 		a {
 			text-decoration: none;
+			color: white;
 		}
+		
+
 	}
 
 }
