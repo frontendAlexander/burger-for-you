@@ -1,8 +1,15 @@
 .section-delivery {
 	display: block;
-	height: 63rem;
+	height: auto;
 	position: relative;
 	padding-top: 11rem;
+	padding-bottom: 10rem;
+	@media (max-width: 420px) {
+		padding-top: 0;
+		padding-bottom: 5.7rem;
+
+
+	}
 	&__title {
 		padding-bottom: 6.4rem;
 	}
@@ -10,18 +17,28 @@
 		min-width: 30rem;
 		padding-bottom: 12rem;
 		position: relative;
+		@media (max-width: 420px) {
+			padding-bottom: 0;
+		}
 		.promo-box {
 			padding-bottom: 2.6rem;
 			min-width: 31rem;
+			height: 26rem;
+			@media (max-width: 420px) {
+				padding-bottom: 0;
+				&:not(:last-child){
+					height: 17rem;
+				}
+			}
 			&__figure {
-			display: inline-block;
-			position: relative;
+				display: inline-block;
+				position: relative;
 				&__item1 {
 					background-color: white;
 					background-color: $brown;
 					width: 12rem;
 					height: 12rem;
-					border-radius: 60px;
+					border-radius: 50%;
 					margin:0 0;
 					&:before {
 						content: '';
@@ -30,7 +47,7 @@
 						width: 120%;
 						height: 120%;
 						border: 5px dashed black;
-						border-radius: 90px;
+						border-radius: 50%;
 						border-width: 30px;
 						top: -1rem;
 						left: -2rem;
@@ -56,7 +73,7 @@
 					background-color: $brown;
 					width: 12rem;
 					height: 12rem;
-					border-radius: 60px;
+					border-radius: 50%;
 					margin:0 0;
 					&:before {
 						content: '';
@@ -65,7 +82,7 @@
 						width: 120%;
 						height: 120%;
 						border: 5px dashed black;
-						border-radius: 90px;
+						border-radius: 50%;
 						border-width: 30px;
 						top: -1rem;
 						left: -2rem;
@@ -91,7 +108,7 @@
 					background-color: $brown;
 					width: 12rem;
 					height: 12rem;
-					border-radius: 60px;
+					border-radius: 50%;
 					margin:0 0;
 					&:before {
 						content: '';
@@ -100,7 +117,7 @@
 						width: 120%;
 						height: 120%;
 						border: 5px dashed black;
-						border-radius: 90px;
+						border-radius: 50%;
 						border-width: 30px;
 						top: -1rem;
 						left: -2rem;
@@ -144,7 +161,7 @@
 		position: relative;
 		button {
 			height: 8.5rem;
-			width: 36rem;
+			max-width: 36rem;
 			font-size: 1.8rem;
 			text-transform: uppercase;
 			position: absolute;
