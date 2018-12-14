@@ -15,11 +15,13 @@
 		width: 59%;
 		vertical-align: top;
 		position: relative;
+		padding-left: 3rem;
 		.contacts-map {
 			height: 45rem;
 			width: 67rem;
 			background-color:white;
 			float: right;
+			margin-left: 3rem;
 			margin-right: 3.5rem;
 		}
 		@media (max-width: 900px) {

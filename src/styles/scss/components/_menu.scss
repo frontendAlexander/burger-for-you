@@ -5,12 +5,10 @@
 	background-color: $dark-gray;
 	padding-bottom: 13.5rem;
 	padding-top: 9rem;
+	text-align: center;
 	h3 {
 		padding-left: 3.3rem;
 		padding-bottom: 7.9rem;
-	}
-	&__cards-row {
-		text-align: center;
 	}
 	@media (max-width: 420px) {
 		height: 125rem;
@@ -24,19 +22,22 @@
 		display: inline-block;
 		position: relative;
 		height: 25rem;
-		width: 18rem;
+		width: 100%;
 		color: black;
 		border: 1px solid $dark-gray;
 		border-radius: 0.4rem;
 		text-align: center;
 		transition: transform .3s;
+		
 		&--col-1-of-1 {
+
 			@media (max-width: 460px) {
-				min-height: 495px;
+				height: auto;
 				width: 100%;
+				padding-bottom: 10rem;
 			}
 		}
-		&__hide {
+		&--hide {
 			@media (max-width: 420px) {
 			  display: none;
 			}
@@ -47,8 +48,8 @@
 		} 
 		&__image {
 			display: block;
-			height:15rem;
-			width: 100%;
+	        width: 100%;
+	        max-width: 100%;
 			@media (max-width: 420px) {
 				height: 30rem;
 				width: 100%;
@@ -72,4 +73,5 @@
 			color: pink;
 		}
 	}
+
 }

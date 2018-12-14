@@ -2,13 +2,11 @@
 	display: block;
 	height: auto;
 	position: relative;
-	padding-top: 11rem;
+	padding-top: 8rem;
 	padding-bottom: 10rem;
 	@media (max-width: 420px) {
-		padding-top: 0;
+		padding-top: 15rem;
 		padding-bottom: 5.7rem;
-
-
 	}
 	&__title {
 		padding-bottom: 6.4rem;

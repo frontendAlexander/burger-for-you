@@ -47,7 +47,6 @@
     </div>
     <div class="header__burgers">
       <div class="burger-cards">
-        
           <div class="Grid">
             <div class="Grid-item">
               <div class="burger-cards__item1"></div>
@@ -74,71 +73,90 @@
   </header>
   <main>
     <section class="section-about">
-          
-          <div class="section-about__text">
-          <h2 class="heading-secondary">
-              Особенности наших бургеров
-            </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur.</p>
+      <div class="section-about__text">
+        <h2 class="heading-secondary">
+            Особенности наших бургеров
+          </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__side about-card__side--front">
+              <picture>
+                <source srcset="
+                    public/images/picture-about-burger-for-you.jpg 484w,
+                    public/images/picture-about-large-burger-for-you.jpg 968w"
+                  sizes="
+                    (max-width: 550px) 100vw,
+                    (max-width: 900px) 50vw,
+                    50vw"
+                  type="image/jpg">
+                <img src="public/images/picture-about-burger-for-you.jpg" alt="Бургер" class="card__image">
+            </picture>
           </div>
-              
-          
-          <div class="about-card">
-            <div class="about-card__side about-card__side--front"></div>
-            <div class="about-card__side about-card__side--back">
-              <div class="about-card__side-back-side">
-                <table>
-                    <tr>
-                      <th>Ингридиенты:</th>
-                    </tr>
-                    <tr>
-                      <td>Три мясных котлеты "Скайрим"</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Особый "Глюкомятный" соус</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Огурцы из подземной лаборатории Рика</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Салат, красивый лук</td>
-                      
-                    </tr>
-                     <tr>
-                      <td>Булочки из пластмассы</td>
-                      
-                    </tr>
-                  </table>
-                  <button class="btn">Обратный звонок</button>
-              </div>
+          <div class="about-card__side about-card__side--back">
+            <div class="about-card__side-back-side">
+              <table>
+                  <tr>
+                    <th>Ингридиенты:</th>
+                  </tr>
+                  <tr>
+                    <td>Три мясных котлеты "Скайрим"</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Особый "Глюкомятный" соус</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Огурцы из подземной лаборатории Рика</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Салат, красивый лук</td>
+                    
+                  </tr>
+                   <tr>
+                    <td>Булочки из пластмассы</td>
+                    
+                  </tr>
+                </table>
+                <button class="btn">Обратный звонок</button>
             </div>
           </div>
+        </div>
         
     </section>
     <section class="section-menu" id="menu">
       <h3 class="heading-secondary heading-secondary--white">Меню нашего ресторана</h3>
-      <div class="section-menu__cards-row">
+      <div class="section-menu">
         <div class="Grid Grid--col-1-of-1">
           <div class="Grid-item">
             <div class="card card--col-1-of-1">
-              <img class="card__image" src="public/images/picture-menu-burger-for-you.jpg" />
+              <picture>
+                <source srcset="
+                  public/images/picture-menu-small-burger-for-you.jpg 90w,
+                  public/images/picture-menu-burger-for-you.jpg 181w,
+                  public/images/picture-large-menu-burger-for-you.jpg 362w"
+                sizes="(max-width: 480px) 18.1rem,
+                  (max-width: 900px) 9rem,
+                  36.2rem"
+                type="image/jpg">
+                <img src="public/images/picture-menu-small-burger-for-you.jpg" alt="" class="card__image">
+              </picture>
               <span class="card__title">Название здесь</span>
               <span class="card__desc">350р.</span>
               <button class="card__button">Заказать</button>
@@ -146,59 +164,127 @@
           </div>
           <div class="Grid-item">
             <div class="card card--col-1-of-1">
-              <img class="card__image" src="public/images/picture-menu-burger-for-you.jpg" />
+              <picture>
+                <source srcset="
+                  public/images/picture-menu-small-burger-for-you.jpg 90w,
+                  public/images/picture-menu-burger-for-you.jpg 181w,
+                  public/images/picture-large-menu-burger-for-you.jpg 362w"
+                sizes="(max-width: 480px) 18.1rem,
+                  (max-width: 900px) 9rem,
+                  36.2rem"
+                type="image/jpg">
+                <img src="public/images/picture-menu-small-burger-for-you.jpg" alt="" class="card__image">
+              </picture>
               <span class="card__title">Название здесь</span>
               <span class="card__desc">350р.</span>
               <button class="card__button">Заказать</button>
             </div>
           </div>
           <div class="Grid-item">
-            <div class="card card__hide">
-              <img class="card__image" src="public/images/picture-menu-burger-for-you.jpg" />
+            <div class="card card--hide">
+              <picture>
+                <source srcset="
+                  public/images/picture-menu-small-burger-for-you.jpg 90w,
+                  public/images/picture-menu-burger-for-you.jpg 181w,
+                  public/images/picture-large-menu-burger-for-you.jpg 362w"
+                sizes="(max-width: 480px) 18.1rem,
+                  (max-width: 900px) 9rem,
+                  36.2rem"
+                type="image/jpg">
+                <img src="public/images/picture-menu-small-burger-for-you.jpg" alt="" class="card__image">
+              </picture>
               <span class="card__title">Название здесь</span>
               <span class="card__desc">350р.</span>
               <button class="card__button">Заказать</button>
             </div>
           </div>
           <div class="Grid-item">
-            <div class="card card__hide">
-              <img class="card__image" src="public/images/picture-menu-burger-for-you.jpg" />
+            <div class="card card--hide">
+              <picture>
+                <source srcset="
+                  public/images/picture-menu-small-burger-for-you.jpg 90w,
+                  public/images/picture-menu-burger-for-you.jpg 181w,
+                  public/images/picture-large-menu-burger-for-you.jpg 362w"
+                sizes="(max-width: 480px) 18.1rem,
+                  (max-width: 900px) 9rem,
+                  36.2rem"
+                type="image/jpg">
+                <img src="public/images/picture-menu-small-burger-for-you.jpg" alt="" class="card__image">
+              </picture>
               <span class="card__title">Название здесь</span>
               <span class="card__desc">350р.</span>
               <button class="card__button">Заказать</button>
             </div>
           </div>
         </div>
-      </div>
-      <div class="section-menu__cards-row">
-        <div class="Grid">
+        <div class="Grid Grid--hide">
           <div class="Grid-item">
-            <div class="card card__hide">
-              <img class="card__image" src="public/images/picture-menu-burger-for-you.jpg" />
+            <div class="card card--col-1-of-1">
+              <picture>
+                <source srcset="
+                  public/images/picture-menu-small-burger-for-you.jpg 90w,
+                  public/images/picture-menu-burger-for-you.jpg 181w,
+                  public/images/picture-large-menu-burger-for-you.jpg 362w"
+                sizes="(max-width: 480px) 18.1rem,
+                  (max-width: 900px) 9rem,
+                  36.2rem"
+                type="image/jpg">
+                <img src="public/images/picture-menu-small-burger-for-you.jpg" alt="" class="card__image">
+              </picture>
               <span class="card__title">Название здесь</span>
               <span class="card__desc">350р.</span>
               <button class="card__button">Заказать</button>
             </div>
           </div>
           <div class="Grid-item">
-            <div class="card card__hide">
-              <img class="card__image" src="public/images/picture-menu-burger-for-you.jpg" />
+            <div class="card card--hide">
+              <picture>
+                <source srcset="
+                  public/images/picture-menu-small-burger-for-you.jpg 90w,
+                  public/images/picture-menu-burger-for-you.jpg 181w,
+                  public/images/picture-large-menu-burger-for-you.jpg 362w"
+                sizes="(max-width: 480px) 18.1rem,
+                  (max-width: 900px) 9rem,
+                  36.2rem"
+                type="image/jpg">
+                <img src="public/images/picture-menu-small-burger-for-you.jpg" alt="" class="card__image">
+              </picture>
               <span class="card__title">Название здесь</span>
               <span class="card__desc">350р.</span>
               <button class="card__button">Заказать</button>
             </div>
           </div>
           <div class="Grid-item">
-            <div class="card card__hide">
-              <img class="card__image" src="public/images/picture-menu-burger-for-you.jpg" />
+            <div class="card card--hide">
+              <picture>
+                <source srcset="
+                  public/images/picture-menu-small-burger-for-you.jpg 90w,
+                  public/images/picture-menu-burger-for-you.jpg 181w,
+                  public/images/picture-large-menu-burger-for-you.jpg 362w"
+                sizes="(max-width: 480px) 18.1rem,
+                  (max-width: 900px) 9rem,
+                  36.2rem"
+                type="image/jpg">
+                <img src="public/images/picture-menu-small-burger-for-you.jpg" alt="" class="card__image">
+              </picture>
               <span class="card__title">Название здесь</span>
               <span class="card__desc">350р.</span>
               <button class="card__button">Заказать</button>
             </div>
           </div>
           <div class="Grid-item">
-            <div class="card card__hide">
-              <img class="card__image" src="public/images/picture-menu-burger-for-you.jpg" />
+            <div class="card card--hide">
+              <picture>
+                <source srcset="
+                  public/images/picture-menu-small-burger-for-you.jpg 90w,
+                  public/images/picture-menu-burger-for-you.jpg 181w,
+                  public/images/picture-large-menu-burger-for-you.jpg 362w"
+                sizes="(max-width: 480px) 18.1rem,
+                  (max-width: 900px) 9rem,
+                  36.2rem"
+                type="image/jpg">
+                <img src="public/images/picture-menu-small-burger-for-you.jpg" alt="" class="card__image">
+              </picture>
               <span class="card__title">Название здесь</span>
               <span class="card__desc">350р.</span>
               <button class="card__button">Заказать</button>
@@ -248,14 +334,12 @@
         </div>
       </div>
       <div class="section-delivery__button">
-        
-          <button>
-            <a href="#popup">
-              Заказать
-            </a>
-          </button>
-        
-      </div>
+        <button>
+          <a href="#popup">
+            Заказать
+          </a>
+        </button>
+        </div>
     </section>
     <section>
       <div class="contacts">
