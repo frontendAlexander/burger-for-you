@@ -5,10 +5,12 @@
 	color: black;
 	margin-top: 7rem;
 	margin-bottom: 12rem;
+
 	@media (max-width: 550px) {
 		flex-direction: column;
 	}
 	&__text {
+		margin-left: 1.6rem;
 		width: 49%;
 		font-size: 0.7rem;
 		padding-right: 4.5rem;

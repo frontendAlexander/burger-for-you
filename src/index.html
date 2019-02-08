@@ -6,39 +6,61 @@
   <title></title>
 </head>
 <body>
-  <nav class="top">
+  <header class="top">
     <div class="top-box">
       <div class="top-box__logo">
         <img src="../public/images/logo-burger-for-you.png"></img>
        </div>
        <div class="top-box__list">
-        <div class="Grid">
-         <ul class="nav">
-           <li>Главная</li>
-           <li>Наши бургеры</li>
-           <li>Меню</li>
-           <li>Доставка</li>
-           <li>Контакты</li>
-         </ul>
+          <div class="Grid">
+            <nav aria-label="navigation">
+               <ul class="nav">
+                 <li href="#" tabindex="0">Главная</li>
+                 <li href="#" tabindex="0">Наши бургеры</li>
+                 <li href="#" tabindex="0">Меню</li>
+                 <li href="#" tabindex="0">Доставка</li>
+                 <li href="#" tabindex="0">Контакты</li>
+              </ul> 
+            </nav>
+         </div>
        </div>
-       </div>
-       <div class="top-box__cart">
+       <div class="top-box__offer">
         <div class="commerc">
-           <div class="commerc__img">
-            <div class="count-box">
-              <span id="" class="count-box__counter">1</span>
-            </div>
+            <div class="commerc__img">
+              <div class="count-box">
+                <span id="" class="count-box__counter">1</span>
+              </div>
            </div>
            <div class="commerc__counter">Итого: 0,50$</div>
-           <div class="commerc__button">
-             <button><a href="#popup">Заказать</a></button> 
-           </div>
-           <div class="commerc__burger"></div>
+            <div class="commerc__button">
+              <button><a href="#popup">Заказать</a></button> 
+            </div>
         </div>
-       </div>
+      </div>
     </div>
-  </nav>
-  <header class="header">
+    <div class="sidebar">
+      <input type="checkbox" class="sidebar__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="sidebar__button" tabindex="0"></label>
+      <!-- background -->
+      <div class="sidebar__background"></div>
+      <!-- ---------- -->
+      <div class="sidebar__nav">
+        <ul class="sidebar-list">
+          <li class="sidebar-list__item"><a class="sidebar-list__link" href="#" tabindex="0">Главная</a></li>
+
+          <li class="sidebar-list__item"><a class="sidebar-list__link" href="#" tabindex="0">Наши бургеры</a></li>
+
+          <li class="sidebar-list__item"><a class="sidebar-list__link" href="#" tabindex="0">Меню</a></li>
+
+          <li class="sidebar-list__item"><a class="sidebar-list__link" href="#" tabindex="0">Доставка</a></li>
+
+          <li class="sidebar-list__item"><a class="sidebar-list__link" href="#" tabindex="0">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main role=”main”>
+    <section class="header">
     <div class="header__text">
       <h1 class="heading-primary">
         <span class="heading-primary--main">Бургеры ручной <br>работы</span>
@@ -70,75 +92,73 @@
         </a>
       </button>
     </div>
-  </header>
-  <main>
-    <section class="section-about">
-      <div class="section-about__text">
-        <h2 class="heading-secondary">
-            Особенности наших бургеров
-          </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur.</p>
+  </section>
+  <section class="section-about">
+    <div class="section-about__text">
+      <h2 class="heading-secondary">
+          Особенности наших бургеров
+        </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card__side about-card__side--front">
+            <picture>
+              <source srcset="
+                  public/images/picture-about-burger-for-you.jpg 484w,
+                  public/images/picture-about-large-burger-for-you.jpg 968w"
+                sizes="
+                  (max-width: 550px) 100vw,
+                  (max-width: 900px) 50vw,
+                  50vw"
+                type="image/jpg">
+              <img src="public/images/picture-about-burger-for-you.jpg" alt="Бургер" class="card__image">
+          </picture>
         </div>
-        <div class="about-card">
-          <div class="about-card__side about-card__side--front">
-              <picture>
-                <source srcset="
-                    public/images/picture-about-burger-for-you.jpg 484w,
-                    public/images/picture-about-large-burger-for-you.jpg 968w"
-                  sizes="
-                    (max-width: 550px) 100vw,
-                    (max-width: 900px) 50vw,
-                    50vw"
-                  type="image/jpg">
-                <img src="public/images/picture-about-burger-for-you.jpg" alt="Бургер" class="card__image">
-            </picture>
-          </div>
-          <div class="about-card__side about-card__side--back">
-            <div class="about-card__side-back-side">
-              <table>
-                  <tr>
-                    <th>Ингридиенты:</th>
-                  </tr>
-                  <tr>
-                    <td>Три мясных котлеты "Скайрим"</td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Особый "Глюкомятный" соус</td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Огурцы из подземной лаборатории Рика</td>
-                    
-                  </tr>
-                  <tr>
-                    <td>Салат, красивый лук</td>
-                    
-                  </tr>
-                   <tr>
-                    <td>Булочки из пластмассы</td>
-                    
-                  </tr>
-                </table>
-                <button class="btn">Обратный звонок</button>
-            </div>
+        <div class="about-card__side about-card__side--back">
+          <div class="about-card__side-back-side">
+            <table>
+                <tr>
+                  <th>Ингридиенты:</th>
+                </tr>
+                <tr>
+                  <td>Три мясных котлеты "Скайрим"</td>
+                  
+                </tr>
+                <tr>
+                  <td>Особый "Глюкомятный" соус</td>
+                  
+                </tr>
+                <tr>
+                  <td>Огурцы из подземной лаборатории Рика</td>
+                  
+                </tr>
+                <tr>
+                  <td>Салат, красивый лук</td>
+                  
+                </tr>
+                 <tr>
+                  <td>Булочки из пластмассы</td>
+                  
+                </tr>
+              </table>
+              <button class="btn">Обратный звонок</button>
           </div>
         </div>
-        
+      </div>
     </section>
     <section class="section-menu" id="menu">
       <h3 class="heading-secondary heading-secondary--white">Меню нашего ресторана</h3>

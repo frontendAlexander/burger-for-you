@@ -36,92 +36,176 @@
 			    }
 			}
 		}
-		&__cart {
-			@media (max-width: 700px) {
-				margin-right: 0;
+		&__offer {
+			.commerc {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				margin-top: 4rem;
+			@media (max-width: 700px){
+				grid-template-columns: 1fr 1fr 1fr 1fr;
 			}
-			
-		}	
-	}
-	.commerc {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		margin-top: 4rem;
-		@media (max-width: 700px){
-			grid-template-columns: 1fr 1fr 1fr 1fr;
-		}
-		&__img {
-			height: 6.4rem;
-			width: 5.8rem;
-			background-image: url('../../../public/images/icon-cart-burger-for-you.png');
-			background-repeat:no-repeat;
-			background-position: center center;
-			margin-right: 5.6rem;
-			.count-box{
-				position: relative;
-				height: 4.1rem;
-				width:4.1rem;
-				color: white;
-				background-color: blue;
-				border-radius: 50px;
-				text-align: center;
-				margin-top: -1.7rem;
-				margin-left: 4.3rem;
-				z-index:1;
-				&__counter{
-					position: absolute;
-				    top: 50%;
-				    left: 50%;
-				    transform: translate(-50%,-50%);
-					font-size: 1.6rem;
-					z-index:2;
+			&__img {
+				height: 6.4rem;
+				width: 5.8rem;
+				background-image: url('../../../public/images/icon-cart-burger-for-you.png');
+				background-repeat:no-repeat;
+				background-position: center center;
+				margin-right: 5.6rem;
+				.count-box{
+					position: relative;
+					height: 4.1rem;
+					width:4.1rem;
+					color: white;
+					background-color: blue;
+					border-radius: 50px;
+					text-align: center;
+					margin-top: -1.7rem;
+					margin-left: 4.3rem;
+					z-index:1;
+					&__counter{
+						position: absolute;
+					    top: 50%;
+					    left: 50%;
+					    transform: translate(-50%,-50%);
+						font-size: 1.6rem;
+						z-index:2;
+						}
+					}
+					@media (max-width: 700px) {
+						margin-right: 3.3rem;
 					}
 				}
+			&__counter {
+				font-size: $nav-font-size;
+				padding-top: 0.7rem;
+				margin-right: 2.1rem;
+			}
+			&__button {
+				height: 5.7rem;
+				width: 100%;
+				font-size: $nav-button-font-size;
+				margin-right: 3rem;
+				button {
+					height: 100%;
+					width: 100%;
+					background-color: blue;
+					border: none;
+					border-radius: 2px;
+				}
+				a {
+					color: pink;
+				}
 				@media (max-width: 700px) {
-					margin-right: 3.3rem;
+					margin-right: 1rem;
+					width: 10rem;
+					height: 3.8rem;
+				}
+				@media (max-width: 400px){
+					display: none;
+				}
+
+			}
+			
+			}
+			
+				@media (max-width: 700px) {
+					margin-right: 0;
+				}
+				
+			}
+		}
+}
+.sidebar {
+	display: none;
+	@media (max-width: 600px) {
+		display: inline-block;
+	}
+	&__checkbox {
+		visibility: hidden;
+		cursor: pointer;
+		&:checked ~ .sidebar__background {
+			top: 13.2rem;
+			visibility: visible;
+			transform: scaleX(80);
+		}
+		&:checked ~ .sidebar__nav {
+			opacity: 1;
+			height: 50%;
+			width: 100%;
+		}
+	}
+	&__button {
+		background-image: url("../../../public/images/burger.png");
+		background-repeat: no-repeat;
+		height: 3.3rem;
+		width: 4.2rem;
+		position: absolute;
+		top: 4rem;
+		right: 3.2rem;
+		z-index: 2000;
+		box-shadow: 0 1rem 3rem rgba($black, .1);
+			@media (max-width: 600px) {
+				right: 1rem;
+			}
+		}
+	&__background {
+		height: 90vh;
+		width: 6rem;
+		visibility: hidden;
+		position: absolute;
+		top: 13.2rem;
+		right: 6.5rem;
+		background-color: #8e4c19;
+		z-index: 4;
+		transition: transform .8s;
+	}
+	&__nav {
+		height: 100vh;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		right:0;
+		z-index: 1500;
+		opacity: 0;
+		width: 0;
+		transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		.sidebar-list {
+			width: 100%;
+			position: absolute;
+			top: 13.2rem;
+			&__item {
+				height: 4.1rem;
+				margin-top: 5.6rem;
+				padding-top: 1.4rem;
+				list-style-type: none;
+				&:hover {
+					background-color: black;
 				}
 			}
-		&__counter {
-			font-size: $nav-font-size;
-			padding-top: 0.7rem;
-			margin-right: 2.1rem;
-		}
-		&__button {
-			height: 5.7rem;
-			width: 17rem;
-			font-size: $nav-button-font-size;
-			margin-right: 3rem;
-			button {
-				height: 100%;
-				width: 100%;
-				background-color: blue;
-				border: none;
-				border-radius: 2px;
-			}
-			a {
-				color: pink;
-			}
-			@media (max-width: 700px) {
-				margin-right: 1rem;
-				width: 10rem;
-				height: 3.8rem;
-			}
-			@media (max-width: 400px){
-				display: none;
-			}
-
-		}
-		&__burger {
-			display: none;
-			height: 3.3rem;
-			width: 4rem;
-			background-image: url('../../../public/images/menu.svg');
-			background-size: cover;
-			background-position: center;
-			@media (max-width: 700px) {
-				display: inline-block;
+			&__link {
+				&:link,
+				&:visited {
+					display: inline;
+					width: 100%;
+					font-size: 1rem;
+					font-weight: 300;
+					color: white;
+					text-decoration: none;
+					text-transform: uppercase;
+					padding: 1rem 2rem;
+					background-size: 200%;
+					transition: all .4s;
+					span {
+						margin-right: 1.5rem;
+						display: inline-block;
+					}
+				}
+				&:hover,
+				&:active {
+					background-position: 100%;
+					transform: translateX(1rem);
+				}
 			}
 		}
 	}
-
 }

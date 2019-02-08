@@ -6,7 +6,7 @@
 	background-color: $dark-gray;
 	padding-bottom: 13.5rem;
 	padding-top: 9rem;
-	@media (max-width: 420px) {
+	@media (max-width: 500px) {
 		display: flex;
 		flex-direction: column-reverse;
 	}
@@ -27,6 +27,7 @@
 		@media (max-width: 900px) {
 			width: 100%;
 			.contacts-map {
+				margin: 2.3rem auto;
 				padding-right: 0;
 				padding-left: 0;
 			}
@@ -87,6 +88,7 @@
 			width: 100%;
 			.contacts-form {
 				//min-width: auto;
+				margin-left: 1.2rem;
 				margin-right: 0;
 			}
 		}
